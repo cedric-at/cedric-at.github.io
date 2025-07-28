@@ -162,24 +162,32 @@
     }
     
     .news-card {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       background-color: var(--profile-bg);
       border-left: 4px solid var(--link-color);
       padding: 10px 15px;
       margin: 10px 0;
       border-radius: 5px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       font-size: 0.95em;
       box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: background-color 0.2s;
     }
-    
-    .news-count {
-      font-size: 0.8em;
+
+    .news-card:hover {
       background-color: var(--border-color);
-      color: var(--secondary-text);
-      padding: 2px 6px;
-      border-radius: 4px;
+    }
+
+    .news-count {
+      background-color: var(--link-color);
+      color: #000;
+      border-radius: 12px;
+      padding: 2px 8px;
+      font-weight: bold;
+      font-size: 0.8em;
     }
 
   </style>
@@ -221,14 +229,27 @@
     <div class="news-card">Paper Rex train keeps rolling in Pacific week 2 <span class="news-count">10</span></div>
   
     <div class="news-date">JULY 26</div>
-    <div class="news-card">🇦🇷 LEVIATÁN put their Champions hopes in new hands for Stage 2 <span class="news-count">24</span></div>
-    <div class="news-card">🇪🇸 GIANTX stands tall in EMEA week 2 <span class="news-count">15</span></div>
+    <a href="news.html?team=leviatan" class="news-card">
+      🇦🇷 LEVIATÁN put their Champions hopes in new hands for Stage 2
+      <span class="news-count">24</span>
+    </a>
   
+    <a href="news.html?team=fnatic" class="news-card">
+      🇪🇺 FNATIC announces roster update before playoffs
+      <span class="news-count">18</span>
+    </a>
+
     <div class="news-date">JULY 22</div>
-    <div class="news-card">🇨🇳 TYLOO, FPX surge after second week of Stage 2 <span class="news-count">15</span></div>
-  
+    <a href="news.html?team=paperrex" class="news-card">
+      🇸🇬 Paper Rex returns to full strength ahead of Tokyo Masters
+      <span class="news-count">12</span>
+    </a>
+
     <div class="news-date">JULY 21</div>
-    <div class="news-card">🇺🇸 VCT Americas resumes with revamped lineups and close matches <span class="news-count">26</span></div>
+    <a href="news.html?team=sentinels" class="news-card">
+      🇺🇸 Sentinels to play with new IGL in group decider
+      <span class="news-count">36</span>
+    </a>
   </div>
 
   
