@@ -9,7 +9,7 @@
       --bg-color: #ffffff;
       --text-color: #333333;
       --heading-color: #2c3e50;
-      --link-color: #3498db;
+      --link-color: #333333; /* dark gray */
       --border-color: #eee;
       --secondary-text: #555;
       --footer-color: #777;
@@ -42,10 +42,6 @@
       color: var(--heading-color);
     }
 
-    h1 {
-      margin-bottom: 10px;
-    }
-
     h2 {
       border-bottom: 1px solid var(--border-color);
       padding-bottom: 5px;
@@ -55,26 +51,6 @@
     a {
       color: var(--link-color);
       text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .publication {
-      margin-bottom: 20px;
-    }
-
-    .publication-title {
-      font-weight: bold;
-    }
-
-    .publication-authors {
-      font-style: italic;
-    }
-
-    .publication-venue {
-      color: var(--secondary-text);
     }
 
     .profile-container {
@@ -106,14 +82,6 @@
       flex: 1;
     }
 
-    .contact-info {
-      margin-top: 10px;
-    }
-
-    .math {
-      font-style: italic;
-    }
-
     footer {
       margin-top: 50px;
       font-size: 0.8em;
@@ -140,14 +108,14 @@
     .news-section {
       margin-top: 20px;
     }
-    
+
     .news-date {
-      font-size: 0.9em;
+      font-size: 0.8em;
       color: var(--secondary-text);
       font-weight: bold;
       margin-top: 20px;
     }
-    
+
     .news-badge {
       background-color: #ccc;
       color: #fff;
@@ -156,11 +124,11 @@
       margin-left: 8px;
       border-radius: 4px;
     }
-    
+
     body.dark .news-badge {
       background-color: #666;
     }
-    
+
     .news-card {
       text-decoration: none;
       color: inherit;
@@ -176,23 +144,23 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.05);
       transition: background-color 0.2s;
     }
-    
+
     .news-card:hover {
       background-color: var(--border-color);
     }
-    
+
     .news-content {
       display: flex;
       align-items: center;
       gap: 8px;
     }
-    
+
     .news-content img {
       width: 20px;
       height: auto;
       vertical-align: middle;
     }
-    
+
     .news-count {
       background-color: var(--border-color);
       color: var(--secondary-text);
@@ -201,8 +169,6 @@
       font-weight: bold;
       font-size: 0.8em;
     }
-
-
   </style>
 </head>
 <body>
@@ -210,7 +176,7 @@
 
   <div class="profile-container">
     <div class="profile-image">
-      <img src="https://i.ibb.co/XfJFN3y0/DSCF7465copy.jpg" alt="DSCF7465copy" border="0">
+      <img src="https://i.ibb.co/XfJFN3y0/DSCF7465copy.jpg" alt="Cedric Photo">
     </div>
     <div class="profile-text">
       <h1>Cedric Anthony Terance</h1>
@@ -219,79 +185,85 @@
           Department of Computer Science and Information Engineering (CSIE)<br>
           National Taiwan University</p>
         <p>
-          <a href="mailto:cedricntu0921@gmail.com">Email</a>     |    
+          <a href="mailto:cedricntu0921@gmail.com">Email</a> |    
           <a href="https://drive.google.com/file/d/1AcLWyaeyZLId13I2_0OIXzKVMBEo4zRF/view?usp=sharing" target="_blank">CV</a>
         </p>
       </div>
     </div>
   </div>
 
-  <p>I am currently a student in the Department of Computer Science and Information Engineering (CSIE), National Taiwan University.</p>
-
-  <h2>Research Interests</h2>
-  <p>Pervasive Intelligence, Internet of Smart Things, V2X Communication and Smart Mobility, Distributed Intelligence and Artificial Intelligence</p>
-
-  <h2>Education</h2>
-  <ul>
-    <li>B.S., Computer Science and Information Engineering, National Taiwan University, Taipei, Taiwan (2021 - present)</li>
-  </ul>
-
   <h2>Featured</h2>
   <div class="news-section">
     <div class="news-date">NOV 2019 <span class="news-badge">LATEST</span></div>
-    <a href="https://cys.or.id/news/shownews/22_young_scientists_competition_in_north_sumatera" class="news-card">
+    <a href="https://cys.or.id/news/shownews/22_young_scientists_competition_in_north_sumatera" class="news-card" data-id="news1">
       <span class="news-content">
         <img src="https://flagcdn.com/w20/id.png" alt="Indonesia">
         Young Scientists Competition in North Sumatera
       </span>
-      <span class="news-count">1</span>
+      <span class="news-count">0</span>
     </a>
-    
+
     <div class="news-date">AUG 2019</div>
-    <a href="https://www.youtube.com/watch?v=986xf9vN9Hw" class="news-card">
+    <a href="https://www.youtube.com/watch?v=986xf9vN9Hw" class="news-card" data-id="news2">
       <span class="news-content">
         <img src="https://flagcdn.com/w20/tw.png" alt="Taiwan">
-        National Taiwan University Science Innovation School for Global Young Scientists
+        NTU Science Innovation School for Global Young Scientists
       </span>
-      <span class="news-count">1</span>
+      <span class="news-count">0</span>
     </a>
 
     <div class="news-date">DEC 2018</div>
-    <a href="https://en.tempo.co/read/924174/indonesian-students-soar-in-international-research-competition" class="news-card">
+    <a href="https://en.tempo.co/read/924174/indonesian-students-soar-in-international-research-competition" class="news-card" data-id="news3">
       <span class="news-content">
         <img src="https://flagcdn.com/w20/th.png" alt="Thailand">
         Indonesian Students Soar in International Research Competition
       </span>
-      <span class="news-count">1</span>
-    </a>    
+      <span class="news-count">0</span>
+    </a>
   </div>
 
-  
   <footer>
     <p>Last updated: July 2025</p>
   </footer>
 
   <script>
-  // Load theme preference on page load
-  document.addEventListener("DOMContentLoaded", () => {
-    const savedTheme = localStorage.getItem("theme");
-    const isDark = savedTheme === "dark";
+    // Theme toggle
+    document.addEventListener("DOMContentLoaded", () => {
+      const savedTheme = localStorage.getItem("theme");
+      const isDark = savedTheme === "dark";
 
-    if (isDark) {
-      document.body.classList.add("dark");
-      document.getElementById("themeToggleBtn").textContent = "☀️";
+      if (isDark) {
+        document.body.classList.add("dark");
+        document.getElementById("themeToggleBtn").textContent = "☀️";
+      }
+
+      // Load view counts from localStorage
+      document.querySelectorAll(".news-card").forEach(card => {
+        const id = card.getAttribute("data-id");
+        const count = localStorage.getItem(`count-${id}`) || "0";
+        card.querySelector(".news-count").textContent = count;
+      });
+    });
+
+    function toggleTheme() {
+      const body = document.body;
+      const btn = document.getElementById("themeToggleBtn");
+      const isDark = body.classList.toggle("dark");
+      btn.textContent = isDark ? "☀️" : "🌙";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
     }
-  });
 
-  // Toggle theme and save preference
-  function toggleTheme() {
-    const body = document.body;
-    const btn = document.getElementById("themeToggleBtn");
-    const isDark = body.classList.toggle("dark");
-    btn.textContent = isDark ? "☀️" : "🌙";
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-  }
-</script>
-
+    // Increment view count
+    document.querySelectorAll(".news-card").forEach(card => {
+      card.addEventListener("click", function () {
+        const id = card.getAttribute("data-id");
+        const countKey = `count-${id}`;
+        let count = parseInt(localStorage.getItem(countKey) || "0", 10);
+        count += 1;
+        localStorage.setItem(countKey, count);
+        card.querySelector(".news-count").textContent = count;
+      });
+    });
+  </script>
 </body>
 </html>
